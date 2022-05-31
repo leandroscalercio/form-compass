@@ -9,19 +9,19 @@
         <div class="form-name">
           <label for="name">Full Name *</label><br />
           <input class="name" type="text" id="name" placeholder="Name" formControlName="name" />
-          <p *ngIf="nameControl.invalid && nameControl.touched ">Fullname Invalid</p>
+          <p class="invalid" *ngIf="nameControl.invalid && nameControl.touched ">Fullname Invalid</p>
         </div>
         <div class="form-mail-phone">
           <div>
             <label for="email">Email *</label><br />
             <input type="text" id="email" placeholder="foo@bar.com" formControlName="email" />
-            <p *ngIf="emailControl.invalid && emailControl.touched ">Email Invalid</p>
+            <p class="invalid" *ngIf="emailControl.invalid && emailControl.touched ">Email Invalid</p>
           </div>
 
           <div>
             <label for="phone">Phone</label> <br />
             <input type="number" id="phone" placeholder="(83) 00000-0000" formControlName="phone" />
-            <p *ngIf="phoneControl.invalid && phoneControl.touched">Phone Invalid</p>
+            <p class="invalid" *ngIf="phoneControl.invalid && phoneControl.touched">Phone Invalid</p>
           </div>
         </div>
 
@@ -29,21 +29,24 @@
           <div>
             <label for="password">Password*</label><br />
             <input type="password" id="password" formControlName="password" />
-            <p *ngIf="passwordControl.invalid && passwordControl.touched ">Password Invalid</p>
+            <p class="invalid" *ngIf="passwordControl.invalid && passwordControl.touched ">Password Invalid</p>
           </div>
           <div class="date">
             <label for="birthday">Birthday *</label> <br />
             <input type="date" id="birthday" formControlName="birthday" />
-            <p *ngIf="birthdayControl.invalid && birthdayControl.touched ">Age Invalid</p>
+            <p class="invalid" *ngIf="birthdayControl.invalid && birthdayControl.touched ">Age Invalid</p>
           </div>
         </div>
         <div class="footer">
           <div class="form-checkbox">
             <input type="checkbox" id="checkbox" formControlName="checkbox" />
             <label for="checkbox"> I accept the terms and privacy </label><br>
-          </div>
-          <p *ngIf="checkboxControl.invalid && checkboxControl.touched ">You must accept the terms</p>
+          </div> <br>
+
           <button>Register</button>
+        </div>
+        <div>
+          <p class="invalid" *ngIf="checkboxControl.invalid && checkboxControl.touched ">You must accept the terms</p>
         </div>
       </div>
     </div>

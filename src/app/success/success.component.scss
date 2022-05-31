@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 617px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.success img {
+  margin-top: 88px;
+}
+
+.success h1 {
+  font-family: "Inter";
+  font-size: 40px;
+  line-height: 24px;
+  font-weight: 600px;
+  margin-top: 56px;
+}
+
+.success a {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 18px;
+  text-decoration: none;
+  color: black;
+  background: #0dbdbd;
+  color: #fff;
+  padding: 40px;
+  margin-top: 157px;
+  margin-bottom: 137px;
+  border-radius: 6px;
+}

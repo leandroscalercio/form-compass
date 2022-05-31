@@ -5,21 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
-import { SucessComponent } from './sucess/sucess.component';
 
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FormComponent,
-    SucessComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+  declarations: [AppComponent, FormComponent, SuccessComponent],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

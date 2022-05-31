@@ -42,3 +42,17 @@
   margin-bottom: 137px;
   border-radius: 6px;
 }
+
+@media only screen and (max-width: 475px) {
+  .success img,
+  h1,
+  a {
+    margin: 10px;
+  }
+
+  .success a {
+    margin-top: 56px;
+    padding: 20px;
+  }
+
+}

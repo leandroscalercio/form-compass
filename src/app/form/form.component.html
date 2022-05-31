@@ -18,7 +18,13 @@
             <p class="invalid" *ngIf="emailControl.invalid && emailControl.touched ">Email Invalid</p>
           </div>
 
-          <div>
+          <div class="password-mobile">
+            <label for="password">Password*</label><br />
+            <input type="password" id="password" formControlName="password" />
+            <p class="invalid" *ngIf="passwordControl.invalid && passwordControl.touched ">Password Invalid</p>
+          </div>
+
+          <div class="phone">
             <label for="phone">Phone</label> <br />
             <input type="number" id="phone" placeholder="(83) 00000-0000" formControlName="phone" />
             <p class="invalid" *ngIf="phoneControl.invalid && phoneControl.touched">Phone Invalid</p>
@@ -26,7 +32,13 @@
         </div>
 
         <div class="form-password-birthday">
-          <div>
+
+          <div class="phone-mobile">
+            <label for="phone">Phone</label> <br />
+            <input type="number" id="phone" placeholder="(83) 00000-0000" formControlName="phone" />
+            <p class="invalid" *ngIf="phoneControl.invalid && phoneControl.touched">Phone Invalid</p>
+          </div>
+          <div class="password">
             <label for="password">Password*</label><br />
             <input type="password" id="password" formControlName="password" />
             <p class="invalid" *ngIf="passwordControl.invalid && passwordControl.touched ">Password Invalid</p>
@@ -38,16 +50,18 @@
           </div>
         </div>
         <div class="footer">
-          <div class="form-checkbox">
-            <input type="checkbox" id="checkbox" formControlName="checkbox" />
-            <label for="checkbox"> I accept the terms and privacy </label><br>
-          </div> <br>
-
+          <div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="checkbox" formControlName="checkbox" />
+              <label for="checkbox"> I accept the terms and privacy </label>
+            </div>
+            <p class="invalid" *ngIf="checkboxControl.invalid && checkboxControl.touched ">You must accept the terms</p>
+          </div>
           <button>Register</button>
         </div>
-        <div>
-          <p class="invalid" *ngIf="checkboxControl.invalid && checkboxControl.touched ">You must accept the terms</p>
-        </div>
+
+
+
       </div>
     </div>
   </form>
